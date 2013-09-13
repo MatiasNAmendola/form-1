@@ -270,9 +270,9 @@ class Field {
 
     if(!file_exists($file)) raise('The field template could not be found: ' . $file);
 
-    Kirby\Toolkit\Content::start();  
+    \Kirby\Toolkit\Content::start();  
     require($file);
-    return Kirby\Toolkit\Content::stop();      
+    return \Kirby\Toolkit\Content::stop();      
 
   }
 
